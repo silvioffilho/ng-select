@@ -176,7 +176,7 @@ export class NgSelectComponent implements OnDestroy, OnChanges, AfterViewInit, C
 
     @HostBinding('class.ng-select-disabled') get disabled() { return this.readonly || this._disabled };
 
-    @HostBinding('class.ng-select-filtered') get filtered() { return (!!this.searchTerm && this.searchable || this._isComposing) };
+    @HostBinding('class.ng-select-filtered') get filtered() { return (!!this.searchTerm && this.searchable) };
 
     itemsList: ItemsList;
     viewPortItems: NgOption[] = [];
